@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<head>
+    <style>
+    header {
+        background: url('{% static "img/bg.jpg" %}');
+    }
+  </style>
+  <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <a href="{% url 'home' %}"><img src="{% static 'img/kitty.jpg' %}" alt="kotek"/></a>
+    <h1><a href="{% url 'home' %}">Przykładowy prosty blog</a></h1>
+    <ul>
+      <li><a href="{% url 'onas' %}">O nas</a></li>
+      <li><a href="{% url 'content' %}">Content</a></li>
+      <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Temat pierwszy</h2>
+   <p>Lorem ipsum dolor sit amet erat. In nec magna. Fusce tempor pede urna quis nisl.<img src="{% static 'img/kitty.jpg' %}" class="fotka" height="100" width="100" align="right"/> Fusce purus sit amet, sollicitudin lorem, ornare tortor justo at fermentum consectetuer. Curabitur lacinia quis, lacinia aliquet. In cursus sapien. Fusce ut nunc eget sapien. Curabitur urna augue, ullamcorper in, adipiscing elit. Nam eget sapien sodales rutrum, urna sem tincidunt et, neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nunc volutpat ante, cursus justo iaculis leo, suscipit rutrum. In fermentum. Aliquam at lacus lacus lacus ipsum sit amet, libero. Pellentesque habitant morbi tristique interdum. Etiam accumsan at, feugiat dui.</p>
+  </article>
+      <footer><br><br><br><br><br>
+        <p>&copy; Smarkusz 2014</p>
+      </footer>
+</body>

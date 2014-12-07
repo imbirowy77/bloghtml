@@ -1,0 +1,15 @@
+{% extends 'home.html' %}
+{% block content %}
+{% load staticfiles %}
+<body>
+  <header>
+    <img src="{% static 'img/kitty.jpg' %}" alt="kotek"/>
+    <h1><a href="{% url 'home' %}">Przykładowy prosty blog</a></h1>
+    <ul>
+      <li><a href="{% url 'onas' %}">O nas</a></li>
+      <li><a href="{% url 'content' %}">Content</a></li>
+      <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+    </ul>
+  </header>
+  </body>
+{% endblock %}

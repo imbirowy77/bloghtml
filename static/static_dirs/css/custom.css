@@ -1,0 +1,63 @@
+header {
+      text-align: center;
+      color: white;
+      background-size: 100% 100%;
+    }
+    body {
+      background-color: rgb(227, 241, 247);
+      margin: 0;
+      font-family: helvetica, sans-serif;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 70px;
+      font-family: 'Inconsolata';
+    }
+    h2 {
+      font-size: 45px;
+      font-family: 'Inconsolata';
+    }
+    img {
+      margin: 40px 0 0 0;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    .fotka {
+      margin: 7px;
+      border: 0;
+      border-radius: 0;
+    }
+    ul {
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0 10px 0 10px;
+    }
+
+    article {
+      max-width: 650px;
+      padding: 20px;
+      margin: 0 auto;
+      text-align: justify;
+      font: 15px arial, sans-serif;
+    }
+    footer {
+      text-align: center;
+      display: block;
+      font: 15px arial, sans-serif;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+}
